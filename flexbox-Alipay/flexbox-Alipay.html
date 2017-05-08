@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒布局-支付宝移动端页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        body {
+            background: #000;
+        }
+        a {
+            color: #239aff;
+            text-decoration: none;
+        }
+        /*width and height :188px*/
+        /*hight:35px*/
+        .container {
+            /*width: 752px;*/
+            /*height: 1300px;*/
+            /*min-width: 752px;*/
+            /*min-height: 1300px;*/
+            margin: 0 auto;
+            background: #EAEAEA;
+        }
+        .container-backHome,.container-Favourites {
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 30px;
+            height: 50px;
+            line-height: 50px;
+            background: #FFF;
+        }
+        .inputs input{
+            width: 550px;
+            height: 45px;
+            border: 1px solid #EAEAEA;
+            background: #eaeaea;
+            border-radius: 5px;
+            padding: 0 15px;
+        }
+        .container-content {
+            border-top: 1px solid #ddd;
+            background: #FFF;
+        }
+        .container-title {
+            padding: 0 30px;
+            height: 35px;
+            line-height: 70px;
+            color: #999;
+        }
+        .container-title:before {
+            content: "I";
+            color: #239aff;
+            margin-right: 8px;
+        }
+        .container-wrap {
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+            /*width: 752px;*/
+            /*min-width: 752px;*/
+            /*min-height: 188px;*/
+        }
+        .col {
+            flex-direction: row;
+            width: 25%;
+            height: 188px;
+            text-align: center;
+            line-height: 290px;
+        }
+        .img1 {
+            width: 443px;
+            background: url("image/1.png") no-repeat center;
+        }
+        .img2 {
+            background: url("image/2.png") no-repeat center;
+        }
+        .img3 {
+            background: url("image/3.png") no-repeat center;
+        }
+        .img4 {
+            background: url("image/4.png") no-repeat center;
+        }
+        .img5 {
+            background: url("image/5.png") no-repeat center;
+        }
+        .img6 {
+            background: url("image/6.png") no-repeat center;
+        }
+        .img7 {
+            background: url("image/7.png") no-repeat 75% 40%;
+        }
+        .img8 {
+            background: url("image/8.png") no-repeat center;
+        }
+        .img9 {
+            background: url("image/9.png") no-repeat center;
+        }
+        .imga {
+            background: url("image/d.png") no-repeat center;
+        }
+        .imgb {
+            background: url("image/a.png") no-repeat center;
+        }
+        .imgc {
+            background: url("image/b.png") no-repeat center;
+        }
+        .imgd {
+            background: url("image/c.png") no-repeat center;
+        }
+        .imge {
+            background: url("image/e.png") no-repeat center;
+        }
+        .imgf {
+            background: url("image/f.png") no-repeat center;
+        }
+        .imgg {
+            background: url("image/g.png") no-repeat center;
+        }
+        .imgh {
+            background: url("image/h.png") no-repeat center;
+        }
+        .imgi {
+            background: url("image/i.png") no-repeat center;
+        }
+        .imgj {
+            background: url("image/j.png") no-repeat center;
+        }
+        .imgk {
+            background: url("image/k.png") no-repeat center;
+        }
+        .imgl {
+            background: url("image/l.png") no-repeat center;
+        }
+        #top {
+            margin-top: 10px;
+        }
+    </style>
+<body>
+<div class="container">
+    <!--back Home-->
+    <div class="container-backHome">
+        <div><a href="#">&lt;Home</a></div>
+        <div class="inputs"><input type="text" placeholder="&nbsp;&nbsp; Search All Apps"></div>
+    </div>
+    <!--my-favourites-->
+    <div class="container-Favourites">
+        <div>My Favourites</div>
+        <div class="img1"></div>
+        <div><a href="#">Edit</a></div>
+    </div>
+    <!--Recent-->
+    <div id="top" class="container-content">
+        <div class="container-title">Recent</div>
+        <div class="container-wrap">
+            <div class="col img2">Bonus</div>
+            <div class="col img3">Credit Pay</div>
+            <div class="col img4">Zhima Credit</div>
+            <div class="col img5">Top Up</div>
+            <div class="col img6">Collect</div>
+        </div>
+    </div>
+    <!--Rocommend-->
+    <div class="container-content">
+        <div class="container-title">Recommend</div>
+        <div class="container-wrap">
+            <div class="col img7">ShareBike</div>
+            <div class="col img8">Ant Forest</div>
+            <div class="col img9">Sports</div>
+            <div class="col imga">City Service</div>
+        </div>
+    </div>
+    <!--Convenient Life-->
+    <div class="container-content">
+        <div class="container-title">Convenient Life</div>
+        <div class="container-wrap">
+            <div class="col imgb">Top Up</div>
+            <div class="col imgc">Card Repay</div>
+            <div class="col imgd">Utilities</div>
+            <div class="col imga">City Service</div>
+            <div class="col imge">Lifestyle</div>
+            <div class="col imgf">Right Here</div>
+            <div class="col imgg">Help Center</div>
+            <div class="col imgh">My Packages</div>
+            <div class="col imgi">HealthCare</div>
+            <div class="col imgj">Activity</div>
+            <div class="col imgk">Gasoline</div>
+            <div class="col imgl">YcCT Top Up</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
