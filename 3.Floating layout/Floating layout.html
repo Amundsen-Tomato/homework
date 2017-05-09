@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Floating layout</title>
+</head>
+<style type="text/css">
+	@media screen and (max-width: 1500px) {
+		body #container{
+			width: 1200px;
+		}
+	}
+	@media screen and (max-width:1200px) {
+		body #container{
+			width: 900px;
+		}
+	}
+	@media screen and (max-width:900px) {
+		body #container{
+			width: 600px;
+		}
+	}
+	@media screen and (max-width:768px) {
+		body #container{
+			width: 100%;
+		}
+		body .bottom {
+			width: 50%;
+			margin: 0 auto;
+		}
+		body .bottom>div {
+			width: 100%;
+			margin: 0 auto;
+		}
+		body h1,body p {
+			font-size: 1rem;
+		}
+		body h1 {
+			font-weight: 600;
+		}
+		body h2 {
+			font-size: 1rem;
+		}
+	}
+	html{
+		font-size: 20px;
+	}
+	* {
+		margin: 0;
+		padding: 0;	
+	}
+	#container {
+		text-align: center;
+		width: 1500px;
+		margin: 0 auto;
+	}
+	#wrap {
+		margin:15px auto;
+	}
+	.top {
+		margin-bottom: 20px;
+	}
+	h1 {
+		color: #777;
+		font-weight: 500;
+	}
+	p {
+		padding: 20px 60px;
+		color: #999;
+	}
+	.bottom {
+		overflow: hidden;
+	}
+	.bottom>div{
+		box-sizing: border-box;
+		padding:20px;
+		width: 300px;
+		float:left;
+	}
+	.bottom>div img {
+		width: 100%;
+		-webkit-box-shadow: 2px 2px 20px #999999;
+		-moz-box-shadow: 2px 2px 20px #999999;
+		-ms-box-shadow: 2px 2px 20px #999999;
+		-o-box-shadow: 2px 2px 20px #999999;
+		box-shadow: 2px 2px 20px #999999;
+	}
+	.bottom
+	#footer {
+		width: 30%;
+		height:60px;
+		line-height: 60px;
+		margin: 50px auto;
+		background: #ee786a;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 2px 2px 20px #999999;
+		-moz-box-shadow: 2px 2px 20px #999999;
+		-ms-box-shadow: 2px 2px 20px #999999;
+		-o-box-shadow: 2px 2px 20px #999999;
+		box-shadow: 2px 2px 20px #999999;  
+	}
+	#footer h2 {
+		color: #FFF;
+		font-weight: 500;
+	}
+</style>
+<body>
+	<div id="container">
+		<div id="wrap">
+			<div class="top">
+				<h1>基础入门</h1>
+				<p>我们为你准备了一些适合初学者入门的技术，选择你感兴趣的技术跟随我们的建议学习</p>
+			</div>
+			<div class="bottom">
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="top">
+				<h1>巩固提高</h1>
+				<p>这里有一些进阶提高的技术，挑选你感兴趣的技术深入探索</p>
+			</div>
+			<div class="bottom">
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+				<div><img src="1.png" alt=""></div>
+			</div>
+		</div>
+		<div id="footer">
+			<h2>查看更多课程&gt;</h2>
+		</div>
+	</div>
+</body>
+</html>
