@@ -1,0 +1,255 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #eeeded;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+
+.left-important {
+	float: left;
+}
+.right-important {
+	float: right;
+}
+
+#body-banner {
+	min-width: 1920px;
+	height: 600px;
+	margin:0 auto;
+	background: url("../../image/body/banner.png") no-repeat center;
+	margin-bottom: 30px;
+}
+#body-main {
+	min-width: 1920px;
+	margin: 0 auto;
+}
+
+.language,.host,.vps,.customer {
+	width: 1200px;
+	padding: 0 50px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	overflow: hidden;
+}
+.language {
+	padding: 30px 50px 60px 50px;
+}
+
+/*language*/
+/*width:575px*/
+.language-left,.language-right{
+	min-height: 500px;
+	border: 1px solid #186ec3;
+	border-radius: 10px;
+	padding: 30px 0;
+	box-sizing: border-box;
+	width: 575px;
+	position: relative;
+	background-color: #FFF;
+	box-shadow: 0px 0px 30px #ccc;
+}
+.language-right {
+	border: none;
+}
+.language-left-title,.language-right-title {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.language-left-title>h3,.language-right-title>h3 {
+	font-weight: 500;
+}
+.language-left-title>p,.language-right-title>p {
+	font-size: 0.5rem;
+	margin-top :5px;
+	color:#999;
+}
+.language-left-choose,.language-right-choose {
+	overflow: hidden;
+	margin: 0 auto;
+	padding-left: 100px;
+	box-sizing: border-box;
+}
+.language-left-choose>div,.language-right-choose>div {
+	float: left;
+	width: 33.33333%;
+	margin: 18px 0;
+}
+.language-left-search,.language-right-search {
+	position: absolute;
+	bottom: 45px;
+	padding-left: 100px;
+	box-sizing: border-box;
+}
+.language-text {
+	height: 30px;
+	width: 200px;
+	border: 1px solid #ccc;
+}
+.language-button {
+	height: 32px;
+	border: 1px solid #186ec3;
+	background-color: #186ec3;
+	color: #FFF;
+	margin: -6px;
+	padding: 5px 10px;
+	border: none;
+	position: absolute;
+	right: -77px;
+	bottom:6px;
+}
+
+/*host*/
+.host-title,.vps-title {
+	background: url("../../image/body/bg-color.png");
+	padding-left: 10px;
+	height: 39px;
+	margin-bottom: 60px;
+}
+.host-title>p,.vps-title>p {
+	color:#FFF;
+	font-size: 0.3rem;
+	letter-spacing: 0.1rem;
+	line-height: 39px;
+}
+.host-choose {
+	min-height: 575px;
+	overflow: hidden;
+}
+.host-choose-1,.host-choose-2 {
+	overflow: hidden;
+}
+.host-choose-1>div,.host-choose-2>div {
+	width: 575px;
+	height: 270px;
+	border: 1px solid #186ec3;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 15px 30px 20px 30px;
+	box-sizing: border-box;
+}
+.host-choose-1 {
+	margin-bottom: 30px;
+}
+.host-choose-1>div,.host-choose-2>div {
+	background-color: #FFF;
+}
+.host-span {
+	margin-bottom: 30px;
+}
+.host-span i{
+	color:#186ec3;
+}
+.detail-red {
+	color:red;
+}
+.host-cpt {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.host-cpt>div:last-child {
+	width: 392px;
+}
+.detail-1 {
+	margin-bottom: 10px;
+}
+.detail-2,.detail-3 {
+	color:#999;
+	font-size: 10px;
+}
+.button a{
+	color: #FFF;
+	background: #186ec3;
+	border-radius: 10px;
+	padding: 5px 40px 5px 40px;
+	box-sizing: border-box;
+}
+
+/*vps*/
+.vps-choose {
+	width: 1050px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.vps-choose-content {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.vps-choose-content>div{
+	width: 500px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.vps-detail {
+	overflow: hidden;
+	border-radius: 10px;
+	width: 395px;
+	margin-top: 5px;
+	box-sizing: border-box;
+	padding: 10px 10px 5px 10px;
+}
+.vps-detail h4 {
+	color: #FFF;
+	padding-bottom: 5px;
+}
+.vps-detail span {
+	color:red;
+}
+.vps-detail p {
+	color:#FFF;
+	font-size:10px;
+	font-weight:400;
+}
+.vps-bg1 {
+	background-color: #81afe1;
+}
+.vps-bg2 {
+	background-color: #fbba68;
+}
+.vps-bg3 {
+	background-color: #53d575;
+}
+.vps-bg4 {
+	background-color: #4bcef8;
+}
+
+/*cunstomer*/
+.customer-ul {
+	width: 575px;
+}
+.list-title {
+	background-color: #186ec5;
+	color: #FFF;
+	height: 71px;
+	line-height:71px;
+	text-align: center;
+}
+.list-border{
+	border-left: 1px solid #186ec5;
+	border-right: 1px solid #186ec5;
+	border-bottom: 1px dashed #186ec5;
+	background-color: #FFF;
+	text-align: center;
+	height: 50px;
+	line-height:50px;
+}
+.list-more {
+	height: 91px;
+	line-height: 91px;
+	text-align: center;
+	background-color: #FFF;
+	border-bottom: 1px solid #186ec5;
+	border-left: 1px solid #186ec5;
+	border-right: 1px solid #186ec5;
+}
+.list-more a {
+	color: #186ec5;
+}
