@@ -373,3 +373,23 @@ li {
   left: 34%;
   color: #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+  #body {
+    padding: 0;
+  }
+  #body #left {
+    position: absolute;
+    left: -240px;
+    top: 0;
+    bottom: 0;
+  }
+  #body #right #nav {
+    left: 0;
+  }
+  #body #right #nav .nav-title {
+    position: static;
+  }
+  #body #right #content {
+    width: 90%;
+  }
+}
