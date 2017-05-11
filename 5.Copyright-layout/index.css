@@ -200,11 +200,10 @@ li {
   -o-box-shadow: 1px 1px 1px #000000;
   box-shadow: 1px 1px 1px #000000;
 }
-#right #content .post-item-list .tags .tags-blog {
+#right #content .post-item-list .tags a {
   width: 50px;
   display: inline;
   font-size: 10px;
-  background-color: #186ec3;
   color: #FFF;
   padding: 5px 17px;
   margin: 0 5px;
@@ -213,90 +212,27 @@ li {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+}
+#right #content .post-item-list .tags .tags-blog {
+  background-color: #186ec3;
 }
 #right #content .post-item-list .tags .tags-html {
-  width: 50px;
-  display: inline;
-  font-size: 10px;
   background-color: #FF9800;
-  color: #FFF;
-  padding: 5px 17px;
-  margin: 0 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }
 #right #content .post-item-list .tags .tags-js {
-  width: 50px;
-  display: inline;
-  font-size: 10px;
   background-color: #8BC34A;
-  color: #FFF;
-  padding: 5px 17px;
-  margin: 0 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }
 #right #content .post-item-list .tags .tags-css {
-  width: 50px;
-  display: inline;
-  font-size: 10px;
   background-color: #703cff;
-  color: #FFF;
-  padding: 5px 17px;
-  margin: 0 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }
 #right #content .post-item-list .tags .tags-php {
-  width: 50px;
-  display: inline;
-  font-size: 10px;
   background-color: #2563ff;
-  color: #FFF;
-  padding: 5px 17px;
-  margin: 0 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }
 #right #content .post-item-list .tags .tags-mysql {
-  width: 50px;
-  display: inline;
-  font-size: 10px;
   background-color: #ff4743;
-  color: #FFF;
-  padding: 5px 17px;
-  margin: 0 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }
 #right #content .post-item-list .tags .tags-linux {
-  width: 50px;
-  display: inline;
-  font-size: 10px;
   background-color: #ff7045;
-  color: #FFF;
-  padding: 5px 17px;
-  margin: 0 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }
 #right #content .pages {
   text-align: center;
@@ -373,7 +309,7 @@ li {
   left: 34%;
   color: #FFFFFF;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
   #body {
     padding: 0;
   }
@@ -392,10 +328,36 @@ li {
     line-height: 120px;
   }
   #body #right #nav .nav-title h3 {
-    font-size: 45px;
+    font-size: 50px;
   }
   #body #right #content {
     width: 100%;
     padding-top: 180px;
+  }
+  #body #right #content .post-item-list {
+    padding: 50px 50px 0 50px;
+  }
+  #body #right #content .post-item-list .date {
+    font-size: 30px;
+    box-sizing: border-box;
+  }
+  #body #right #content .post-item-list .article-name h2 {
+    font-size: 40px;
+  }
+  #body #right #content .post-item-list .article-content p {
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 45px;
+  }
+  #body #right #content .post-item-list .tags {
+    line-height: 120px;
+  }
+  #body #right #content .post-item-list .tags a {
+    font-size: 30px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
   }
 }

@@ -208,75 +208,35 @@ li {
         & a:hover {
           .box-shadow(1px 1px 1px rgba(0,0,0,5));
         }
-        & .tags-blog{
+        a {
           width: 50px;
           display: inline;
           font-size: 10px;
-          background-color:#186ec3;
           color: #FFF;
           padding: 5px 17px;
           margin: 0 5px;
           .border-radius(3px)
+        }
+        & .tags-blog{
+          background-color:#186ec3;
         }
         & .tags-html {
-          width: 50px;
-          display: inline;
-          font-size: 10px;
           background-color:#FF9800;
-          color: #FFF;
-          padding: 5px 17px;
-          margin: 0 5px;
-          .border-radius(3px)
         }
         & .tags-js {
-          width: 50px;
-          display: inline;
-          font-size: 10px;
           background-color:#8BC34A;
-          color: #FFF;
-          padding: 5px 17px;
-          margin: 0 5px;
-          .border-radius(3px)
         }
         & .tags-css {
-          width: 50px;
-          display: inline;
-          font-size: 10px;
           background-color: #703cff;
-          color: #FFF;
-          padding: 5px 17px;
-          margin: 0 5px;
-          .border-radius(3px)
         }
         & .tags-php {
-          width: 50px;
-          display: inline;
-          font-size: 10px;
           background-color: #2563ff;
-          color: #FFF;
-          padding: 5px 17px;
-          margin: 0 5px;
-          .border-radius(3px)
         }
         & .tags-mysql {
-          width: 50px;
-          display: inline;
-          font-size: 10px;
           background-color: #ff4743;
-          color: #FFF;
-          padding: 5px 17px;
-          margin: 0 5px;
-          .border-radius(3px)
         }
         & .tags-linux {
-          width: 50px;
-          display: inline;
-          font-size: 10px;
           background-color: #ff7045;
-          color: #FFF;
-          padding: 5px 17px;
-          margin: 0 5px;
-          .border-radius(3px)
         }
       }
     }
@@ -358,7 +318,7 @@ li {
 }
 
 //响应式
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1500px){
   #body {
     padding: 0;
     #left {
@@ -375,13 +335,35 @@ li {
           position: static;
           line-height: 120px;
           h3 {
-            font-size: 45px;
+            font-size: 50px;
           }
         }
       }
       #content {
         width: 100%;
         padding-top: 180px;
+        .post-item-list {
+          padding: 50px 50px 0 50px;
+          .date {
+            font-size: 30px;
+            box-sizing: border-box;
+          }
+          .article-name h2{
+            font-size:40px;
+          }
+          .article-content p{
+            font-size: 30px;
+            letter-spacing: 5px;
+            line-height: 45px;
+          }
+          .tags {
+            line-height: 120px;
+            a {
+              font-size: 30px;
+              .border-radius(8px)
+            }
+          }
+        }
       }
     }
   }
