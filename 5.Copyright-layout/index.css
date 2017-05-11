@@ -385,11 +385,17 @@ li {
   }
   #body #right #nav {
     left: 0;
+    height: 120px;
   }
   #body #right #nav .nav-title {
     position: static;
+    line-height: 120px;
+  }
+  #body #right #nav .nav-title h3 {
+    font-size: 45px;
   }
   #body #right #content {
-    width: 90%;
+    width: 100%;
+    padding-top: 180px;
   }
 }
