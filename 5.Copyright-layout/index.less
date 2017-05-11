@@ -276,7 +276,6 @@ li {
   left:0;
   bottom: 0;
   background-color:#303F9F;
-  box-sizing: border-box;
   .page-view {
     padding: 10px 0;
     text-align: center;
@@ -317,6 +316,18 @@ li {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 //响应式
   @media screen and (max-width: 1500px){
   #body {
@@ -328,9 +339,18 @@ li {
       bottom: 0;
     }
     #right {
+      .main {
+        padding-bottom: 120px;
+      }
       #nav {
         left: 0;
         height: 120px;
+        .close{
+          top: 20%;
+          a {
+            font-size: 50px;
+          }
+        }
         .nav-title {
           position: static;
           line-height: 120px;
@@ -345,25 +365,66 @@ li {
         .post-item-list {
           padding: 50px 50px 0 50px;
           .date {
-            font-size: 30px;
+            font-size: 35px;
             box-sizing: border-box;
           }
           .article-name h2{
-            font-size:40px;
+            font-size:45px;
           }
           .article-content p{
-            font-size: 30px;
+            font-size: 35px;
             letter-spacing: 5px;
-            line-height: 45px;
+            line-height: 50px;
           }
           .tags {
-            line-height: 120px;
+            line-height: 130px;
             a {
-              font-size: 30px;
+              font-size: 35px;
               .border-radius(8px)
             }
           }
         }
+        .pages {
+          .pages-list a {
+            font-size: 45px;
+            padding: 5px 35px;
+          }
+        }
+      }
+    }
+    #copyright {
+      height: 150px;
+      margin-top: -150px;
+      .page-view {
+        h4 {
+          font-size: 35px;
+        }
+      }
+      .copyright-content {
+        h4 {
+          font-size: 35px;
+        }
+      }
+    }
+    #back {
+      width: 120px;
+      height: 120px;
+      position: fixed;
+      bottom: 88px;
+      right: 30px;
+      a {
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        .border-radius(100%);
+        background-color: #eb2e6e;
+      }
+      i {
+        font-size: 60px;
+        position: absolute;
+        top: 24%;
+        left: 27%;
+        color: #FFFFFF;
       }
     }
   }

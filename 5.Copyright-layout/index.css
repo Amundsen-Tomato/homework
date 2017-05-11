@@ -263,11 +263,11 @@ li {
   height: 88px;
   width: 100%;
   margin-top: -88px;
+  box-sizing: border-box;
   position: relative;
   left: 0;
   bottom: 0;
   background-color: #303F9F;
-  box-sizing: border-box;
 }
 #copyright .page-view {
   padding: 10px 0;
@@ -319,9 +319,18 @@ li {
     top: 0;
     bottom: 0;
   }
+  #body #right .main {
+    padding-bottom: 120px;
+  }
   #body #right #nav {
     left: 0;
     height: 120px;
+  }
+  #body #right #nav .close {
+    top: 20%;
+  }
+  #body #right #nav .close a {
+    font-size: 50px;
   }
   #body #right #nav .nav-title {
     position: static;
@@ -338,26 +347,65 @@ li {
     padding: 50px 50px 0 50px;
   }
   #body #right #content .post-item-list .date {
-    font-size: 30px;
+    font-size: 35px;
     box-sizing: border-box;
   }
   #body #right #content .post-item-list .article-name h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
   #body #right #content .post-item-list .article-content p {
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 5px;
-    line-height: 45px;
+    line-height: 50px;
   }
   #body #right #content .post-item-list .tags {
-    line-height: 120px;
+    line-height: 130px;
   }
   #body #right #content .post-item-list .tags a {
-    font-size: 30px;
+    font-size: 35px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     border-radius: 8px;
+  }
+  #body #right #content .pages .pages-list a {
+    font-size: 45px;
+    padding: 5px 35px;
+  }
+  #body #copyright {
+    height: 150px;
+    margin-top: -150px;
+  }
+  #body #copyright .page-view h4 {
+    font-size: 35px;
+  }
+  #body #copyright .copyright-content h4 {
+    font-size: 35px;
+  }
+  #body #back {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    bottom: 88px;
+    right: 30px;
+  }
+  #body #back a {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #eb2e6e;
+  }
+  #body #back i {
+    font-size: 60px;
+    position: absolute;
+    top: 24%;
+    left: 27%;
+    color: #FFFFFF;
   }
 }
