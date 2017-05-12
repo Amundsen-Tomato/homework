@@ -356,9 +356,9 @@ li {
     line-height: 24px;
   }
   #body #right #content .post-item-list .article-content p {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 1px;
-    line-height: 1.8;
+    line-height: 1.9;
   }
   #body #right #content .post-item-list .tags {
     line-height: 40px;
@@ -374,7 +374,7 @@ li {
   #body #right #content .pages .pages-list a {
     font-size: 12px;
     line-height: 34px;
-    padding: 0px15px;
+    padding: 0px 20px;
     margin: 0 2px;
   }
   #body #copyright {
