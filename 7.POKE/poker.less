@@ -1,0 +1,178 @@
+@x:-140px;
+@y:-123px;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.icon-k,.icon-q,.icon-j,.icon-a {
+  font-size: 35px !important;
+}
+.icon-hongtao {
+  color: red;
+}
+.icon-fangkuaisvg {
+  color: red;
+}
+.red {
+  color: red;
+}
+//部分字体大小
+.icon-B,.icon-B1,.icon-B2,.icon-B3,.icon-B4,.icon-B5,.icon-B6,.icon-B7,.icon-B8,.icon-10 {
+  font-size: 32px !important;
+}
+.downs {
+  transform: rotate(180deg);
+}
+.padding-top {
+  padding-top: 30px;
+}
+.padding-bottom {
+  padding-bottom: 30px;
+}
+.padding-bottom-lg {
+  padding-bottom: 120px;
+}
+.padding-bottom-lg180 {
+  padding-bottom: 180px;
+}
+
+body {
+  background-color: #EAEAEA;
+}
+#all {
+  width: 1700px;
+  //height: 310px;
+  //box-sizing: border-box;
+  margin: 20px auto;
+  overflow: hidden;
+}
+#all>div {
+  background-color: #FFF;
+  float: left;
+  width: 140px;
+  height: 246px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 20px;
+  position: relative;
+  margin: 20px 20px;
+}
+//字体
+.font-top {
+  position: absolute;
+  top: 10px;
+  left: -1px;
+  text-align: center;
+  i {
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+    top: -5px;
+  }
+}
+.font-down {
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 10px;
+  right: -1px;
+  text-align: center;
+  i {
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+    top: -5px;
+  }
+}
+
+.top,.down{
+  height: 123px;
+  width: 140px;
+  background: url("poker.jpg") no-repeat;
+}
+.down{
+  transform:rotate(180deg);
+}
+
+//扑克牌K
+.K-hongtao>div{
+  background-position: @x 0;
+}
+.K-fangkuai>div{
+  background-position: @x*2 0;
+}
+.K-heitao>div{
+  background-position: @x*3 0;
+}
+
+//扑克牌Q
+.Q-meihua>div{
+  background-position: 0 @y;
+}
+.Q-hongtao>div{
+  background-position: @x @y;
+}
+.Q-fangkuai>div{
+  background-position: @x*2 @y;
+}
+.Q-heitao>div{
+  background-position: @x*3 @y;
+}
+
+//扑克牌J
+.J-meihua>div{
+  background-position: 0 @y*2;
+}
+.J-hongtao>div{
+  background-position: @x @y*2;
+}
+.J-fangkuai>div{
+  background-position: @x*2 @y*2;
+}
+.J-heitao>div{
+  background-position: @x*3 @y*2;
+}
+
+
+
+.left {
+  float: left;
+  & i {
+    font-size: 51px;
+  }
+}
+.right {
+  float: right;
+  & i {
+    font-size: 51px;
+  }
+}
+
+.middle {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  & i {
+    font-size: 51px;
+  }
+}
+.middle-top {
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  & i {
+    font-size: 51px;
+  }
+}
+.middle-down {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 60%;
+  left: 38%;
+  & i {
+    font-size: 51px;
+  }
+}

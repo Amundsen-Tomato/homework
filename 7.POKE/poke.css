@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.K {
+    width: 1000px;
+    height: 310px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.K>div {
+    float: left;
+    width: 140px;
+    height: 240px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 0 20px;
+}
+.K-meihua {
+    position: relative;
+}
+.K-meihua .top{
+    height: 122px;
+    width: 140px;
+    background: url("poker.jpg") no-repeat;
+    background-position: 0px 0px;
+}
+.K-meihua .down{
+    transform:rotate(180deg);
+    height: 122px;
+    width: 139px;
+    background: url("poker.jpg") no-repeat;
+    background-position: 0px 0px;
+}

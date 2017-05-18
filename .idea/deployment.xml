@@ -9,6 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="blog">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\homework" local="$PROJECT_DIR$" web="" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="xiyifang">
         <serverdata>
           <mappings>
